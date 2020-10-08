@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Undersökning</title>
+</head>
+<body>
+
+<h1>Undersökning som ska fyllas i av anställd</h1><br>
+
+<form action="/action_page.php">
+<div>
+<label for = "namn"><b>Mata in ditt namn:</b></label>
+<input type="text" id="namn" maxlength="20" size="35"><br><br><br>
+</div>
+
+<div>
+<label for="info"><b>Beskriv kort dig själv:</b></label><br>
+<textarea id="info" name="info" rows="4" cols="30" style="background-color:yellow"></textarea><br><br><br>
+</div>
+
+<div>
+<p><i>Tränar du någon idrott?</i></p>
+<label for="ja">JA</label>
+<input type = "radio" id="ja" name="idrottalt"><br>
+<label for="nej">NEJ</label>
+<input type = "radio" id="nej" name="idrottalt"><br><br><br>
+</div>
+
+<div>
+<b><i>Hur föredrar du att läsa om intressanta saker?</i></b><br>
+<label for="läsa1">Böcker</label>
+<input type="checkbox" id="läsa1" name="läsa1" value="böcker"><br>
+<label for="läsa2">Tidningar</label>
+<input type="checkbox" id="läsa2" name="läsa2" value="tidningar"><br>
+<label for="läsa3">Online</label>
+<input type="checkbox" id="läsa3" name="läsa3" value="online"><br><br><br>
+</div>
+
+<label for="movie"><b><i>Vilken är din favoritgenre?</i></b></label><br>
+<select name="movie" id="movie">
+<option value="blank"></option>
+<option value="volvo">Action</option>
+<option value="romantik">Romantik</option>
+<option value=komedi>Komedi</option>
+<option value=drama>Drama</option>
+<option value=skräck>Skräck</option>
+</select><br><br><br>
+
+
+<input type="submit" value="Submit"><br>
+</form>
+<i>När du trycker på submit så kommer all data som skrivits i webformuläret att sparas i webservern</i>
+
+</body>
+</html> 
